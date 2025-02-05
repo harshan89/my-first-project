@@ -1,5 +1,17 @@
-export default function Home() {
+"use client";
+
+import Calculator from "./components/Calculator";
+import Home from "./components/Home/Home";
+import Todo from "./components/Todo/Todo";
+
+const App = () => {
   return (
-    <h1 className="text-2xl">Hey I&apos;m Harshan, going Live 28</h1>
+    <>
+      {/* <Calculator /> */}
+      {/* <Todo /> */}
+      <Home />
+    </>
   );
-}
+};
+
+export default App;
