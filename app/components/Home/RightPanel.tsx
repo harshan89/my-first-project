@@ -10,7 +10,7 @@ const RightPanel: FC<Props> = ({ rightMenu }) => {
     <div className="flex flex-col items-center h-[500] w-[400] bg-gray-500 pt-5 gap-5">
       {rightMenu.map((item, key) => {
         return (
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center" key={key}>
             <p>{item.itemIcon}</p>
             <p key={key}>{item.itemName}</p>
           </div>
