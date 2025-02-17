@@ -6,6 +6,7 @@ import LeftPanel from "./LeftPanel";
 import RightPanel from "./RightPanel";
 import { FcAddColumn } from "react-icons/fc";
 import { FcApproval } from "react-icons/fc";
+import Tab from "../Tab/Tab";
 
 const Home = () => {
   const [leftMenu, setLeftMenu] = useState<string[]>([
@@ -22,6 +23,15 @@ const Home = () => {
     { itemName: "Football", itemIcon: <FcApproval /> },
   ]);
 
+  const tabs1: { tabHeader: string; tabContent: string }[] = [
+    { tabHeader: "Tab 1", tabContent: "Content 1" },
+    { tabHeader: "Tab 2", tabContent: "Content 2" },
+    { tabHeader: "Tab 3", tabContent: "Content 3" },
+    { tabHeader: "Tab 4", tabContent: "Content 4" },
+    { tabHeader: "Tab 5", tabContent: "Content 5" },
+    { tabHeader: "Tab 6", tabContent: "Content 6" }
+  ];
+
   return (
     <div className="flex flex-col min-h-screen bg-blue-200">
       {/* header section start */}
@@ -31,7 +41,9 @@ const Home = () => {
       {/* body section start */}
       <div className="flex gap-[20] justify-center pt-10">
         <LeftPanel leftMenu={leftMenu} />
-        <div className="h-[500] w-[800] bg-purple-500"></div>
+        <div className="h-[500] w-[800] bg-purple-500">
+          <Tab tabs={tabs1} />
+        </div>
         <RightPanel rightMenu={rightMenu} />
       </div>
 
