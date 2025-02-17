@@ -7,6 +7,7 @@ import RightPanel from "./RightPanel";
 import { FcAddColumn } from "react-icons/fc";
 import { FcApproval } from "react-icons/fc";
 import Tab from "../Tab/Tab";
+import PostList from "../Post/Post";
 
 const Home = () => {
   const [leftMenu, setLeftMenu] = useState<string[]>([
@@ -42,7 +43,8 @@ const Home = () => {
       <div className="flex gap-[20] justify-center pt-10">
         <LeftPanel leftMenu={leftMenu} />
         <div className="h-[500] w-[800] bg-purple-500">
-          <Tab tabs={tabs1} />
+          {/* <Tab tabs={tabs1} /> */}
+          <PostList />
         </div>
         <RightPanel rightMenu={rightMenu} />
       </div>
