@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex justify-between p-2  h-[50] bg-green-200">
+    <div className="flex justify-between p-2  h-[50px] bg-green-200">
       <div className="flex gap-5">
         <p>Logo</p>
         <input type="text" className="px-4 py-2 border" />

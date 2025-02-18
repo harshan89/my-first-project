@@ -12,6 +12,7 @@ const Tab: FC<Props> = ({ tabs }) => {
       <div className="flex gap-1">
         {tabs.map((item, index) => (
           <button
+            key={index}
             className="bg-blue-800 text-white p-5 rounded-md"
             onClick={() => {
               setTabIndex(index);

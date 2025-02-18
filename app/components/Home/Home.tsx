@@ -40,9 +40,9 @@ const Home = () => {
       {/* header section end */}
 
       {/* body section start */}
-      <div className="flex gap-[20] justify-center pt-10">
+      <div className="flex gap-[20px] justify-center pt-10">
         <LeftPanel leftMenu={leftMenu} />
-        <div className="h-[500] w-[800] bg-purple-500">
+        <div className="h-[500px] w-[800px] bg-purple-500">
           {/* <Tab tabs={tabs1} /> */}
           <PostList />
         </div>
@@ -52,7 +52,7 @@ const Home = () => {
       {/* body section end */}
 
       {/* footer start */}
-      <div className="h-[80] bg-green-500 w-screen fixed bottom-0"></div>
+      <div className="h-[80px] bg-green-500 w-screen fixed bottom-0"></div>
       {/* footer end */}
     </div>
   );
