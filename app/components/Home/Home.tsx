@@ -8,6 +8,7 @@ import { FcAddColumn } from "react-icons/fc";
 import { FcApproval } from "react-icons/fc";
 import Tab from "../Tab/Tab";
 import PostList from "../Post/Post";
+import Users from "../Users/Users";
 
 const Home = () => {
   const [leftMenu, setLeftMenu] = useState<string[]>([
@@ -30,7 +31,7 @@ const Home = () => {
     { tabHeader: "Tab 3", tabContent: "Content 3" },
     { tabHeader: "Tab 4", tabContent: "Content 4" },
     { tabHeader: "Tab 5", tabContent: "Content 5" },
-    { tabHeader: "Tab 6", tabContent: "Content 6" }
+    { tabHeader: "Tab 6", tabContent: "Content 6" },
   ];
 
   return (
@@ -44,7 +45,8 @@ const Home = () => {
         <LeftPanel leftMenu={leftMenu} />
         <div className="h-[500px] w-[800px] bg-purple-500">
           {/* <Tab tabs={tabs1} /> */}
-          <PostList />
+          {/* <PostList /> */}
+          <Users />
         </div>
         <RightPanel rightMenu={rightMenu} />
       </div>
